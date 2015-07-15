@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="MyMatcher">
+<head>
+  <title>boys</title>
+  <link rel ="stylesheet" href="/css/boys_girls.css">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+</head>
+<body ng-controller="MyMatcherController">
+
+
+	<a href="filter.html"><h1><img class="icon_filter" src="./images/filter.png">Filter your friends!</h1></a>
+	<section class="boys">
+		<h2>Boys<a>132</a></h2>
+		
+		<section ng-repeat="item in testBoys.items">
+	 
+        <ul id="categories-boys" class="clr">
+            <li>
+                <div>
+                  <img src="{{item.picture}}">
+              </div>
+            </li>
+        </ul>
+				<a class ="boys_names">{{item.name}}</a>
+		
+		</section>
+	</section>
+
+	<section class="girls">
+		<h2>Girls<a>124</a></h2>
+
+		<section ng-repeat="item in testGirls.items">
+
+        <ul id="categories-girls" class="clr">
+            <li>
+                <div class = "girls_photos">
+                  <img src="{{item.picture}}">
+              </div>
+            </li>
+        </ul>
+        <a class ="girls_names">{{item.name}}</a>
+			
+		</section>
+	</section>
+
+
+
+<script src="angular.min.js"></script>
+<script src="MyMatcher.js"></script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,1048 @@
+
+
+
+*{
+	padding:0px;
+	margin: 0px;
+}
+
+
+@font-face {
+    font-family: GOTHIC;
+    src: url(GOTHIC.TTF);
+}
+
+@font-face {
+    font-family: GOTHICB;
+    src: url(GOTHICB.TTF);
+}
+
+@font-face {
+    font-family: GOTHICBI;
+    src: url(GOTHICBI.TTF);
+}
+
+@font-face {
+    font-family: GOTHICI;
+    src: url(GOTHICI.TTF);
+}
+
+
+#wrapper{	
+	position:relative;
+	width:100%;
+	margin:0px auto;
+}
+
+header,main,footer,aside,nav{
+	display:block;
+}
+
+/*-------------------------All pages-------------------------------------*/
+
+/*body>section>section>p>a{
+	position: relative;
+	bottom: 18px;
+}*/
+
+h1{
+	font-size: 26px;
+	font-family: GOTHIC;
+}
+
+header,main,footer,aside,nav{
+	display:block;
+}
+
+body{
+	font-family: GOTHIC;
+}
+
+body>a>h1{
+	height: 50px;
+	width: 100%;
+	background-color: #34b670;
+	text-align: center;
+	color: #ffffff;
+	padding-top: 12px;
+}
+
+body>a>h1>img{
+	padding-right: 16px;
+}
+
+a{
+	text-decoration: none;
+}
+
+body>section{
+	position: relative;
+	width: 49%;
+}
+
+body>section>section>p{
+	font-size: 15px;
+}
+
+h2{
+	font-size: 26px;
+}
+
+body .boys h2{
+	background-color: #2babc4;
+	 
+	width: 93%;
+	height: 40px;
+	padding-top: 5px;
+
+}
+
+body .girls h2{
+	background-color: #fe818f;
+	  
+	width: 92%;
+	  height: 40px;
+	  padding-top: 5px;
+
+}
+
+body>section{
+	position: relative;
+}
+
+body>section>h2{
+	color: #ffffff;
+	padding-left: 12px;
+
+}
+
+body>section>h2>a{
+	font-size: 14px;
+	position: absolute;
+	top:15px;
+	right: 10%;
+}
+
+body>section>section>p{
+/*	background-image: url('./images/user_photo_shape.png');
+*/}
+
+body>.girls>section>p{
+	padding-left: 6px;
+	padding-top: 9px;
+}
+
+
+.boys_names{
+	position: relative;
+	bottom:25px;
+	left: 10px;
+}
+
+.girls_names{
+	position: relative;
+	bottom:25px;
+	left: 38%;
+}
+
+
+ /* .girls_img{ 
+ 	padding-left: 5px; 	
+ 	padding-top: 3%;
+ }*/
+
+
+
+.boys{
+	float: left;
+	border-right: #000 1px solid;
+  	min-height: 635px;
+}
+
+
+	
+/*border for each person*/
+.boys > section{
+	 border-right: #000 1px solid;
+}
+.girls{
+	float: left;
+}
+
+
+
+/*---------hexagon----------*/
+
+#categories-boys{
+  overflow:hidden;
+  width:90%;
+  margin:0 auto;
+  top:9px;
+  left: 62%;
+  position: relative;
+}
+
+#categories-boys li{
+  position:relative;
+  list-style-type:none;
+  width:27.85714285714286%; /* = (100-2.5) / 3.5 */
+  padding-bottom: 32.16760145166612%; /* =  width /0.866 */
+  float:left;
+  overflow:hidden;
+  visibility:hidden;
+
+  -webkit-transform: rotate(-60deg) skewY(30deg);
+  -ms-transform: rotate(-60deg) skewY(30deg);
+  transform: rotate(-60deg) skewY(30deg);
+}
+
+
+#categories-boys li *{
+  position:absolute;
+  visibility:visible;
+}
+#categories-boys li > div{
+  width:100%;
+  height:100%;
+  text-align:center;
+  color:#fff;
+  overflow:hidden;
+  
+  -webkit-transform: skewY(-30deg) rotate(60deg);
+  -ms-transform: skewY(-30deg) rotate(60deg);
+  transform: skewY(-30deg) rotate(60deg);
+  
+	-webkit-backface-visibility:hidden;
+  
+}
+
+/* HEX CONTENT */
+#categories-boys li img{
+  left:-100%; right:-100%;
+  width: auto; height:100%;
+  margin:0 auto;   
+}
+
+#categories-girls{
+  overflow:hidden;
+  width:90%;
+  margin:0 auto;
+  top:9px;
+  right: -5px;
+  position: relative;
+}
+
+#categories-girls li{
+  position:relative;
+  list-style-type:none;
+  width:27.85714285714286%; /* = (100-2.5) / 3.5 */
+  padding-bottom: 32.16760145166612%; /* =  width /0.866 */
+  float:left;
+  overflow:hidden;
+  visibility:hidden;
+
+  -webkit-transform: rotate(-60deg) skewY(30deg);
+  -ms-transform: rotate(-60deg) skewY(30deg);
+  transform: rotate(-60deg) skewY(30deg);
+}
+
+
+#categories-girls li *{
+  position:absolute;
+  visibility:visible;
+}
+#categories-girls li > div{
+  width:100%;
+  height:100%;
+  text-align:center;
+  color:#fff;
+  overflow:hidden;
+  
+  -webkit-transform: skewY(-30deg) rotate(60deg);
+  -ms-transform: skewY(-30deg) rotate(60deg);
+  transform: skewY(-30deg) rotate(60deg);
+  
+	-webkit-backface-visibility:hidden;
+}
+
+/* HEX CONTENT */
+#categories-girls li img{
+  left:-100%; right:-100%;
+  width: auto; height:100%;
+  margin:0 auto;   
+}
+
+/*--------filter--------------*/
+
+
+.footer_boys{
+	position:fixed;  
+	height: 48px;
+}
+.footer_girls{
+	position:fixed;
+	right: 0px;  
+	height: 48px;
+}
+
+.footer_boys>h2{
+	background-color:#2babc4;  
+	height: 40px;
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.footer_girls>h2{
+	background-color:#fe818f;  
+	height: 40px;
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+body>footer>section{
+	height:40px;
+	width: 50%;
+	position: relative;
+}
+
+
+
+body>footer>section>h2{
+	color: #ffffff;
+	padding-left: 14px;
+}
+
+
+body>footer>section>h2>a{
+	font-size: 14px;
+	position: absolute;
+	top:15px;
+	right: 10%;
+}
+
+
+body>nav{
+	margin-bottom: 17px;
+}
+
+
+body>nav>ul>li{
+	height: 62px;
+	border-bottom: 2px solid #f8f8f8;
+	/*margin-left:20px;
+	margin-right:20px;
+	margin-top: 10px;*/
+	list-style-type:none;
+	position:relative;
+}
+
+body>nav>ul>li>a{
+	font-size: 18px;
+	color: black;
+	position:absolute;
+	bottom:18px;
+	left:50px;
+}
+
+body>nav>ul>li>a>img{
+	position:absolute;
+	top:0px;
+	left:-34px;
+}
+
+/*--------age--------------*/
+
+.age{
+	padding-top: 10px;
+}
+
+.timeline{
+	padding-bottom: 20px;
+	padding-left: 20px;
+}
+
+.timeline_marker{
+	padding-right: 150px;
+}
+
+.ui-widget-content {
+   background: url("../images/timeline.png");
+  background-repeat: no-repeat;
+  height: 5px;
+  border: none;
+  width: 400px;
+  left: 35px;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+  background: url("../images/timeline_marker.png");
+    width: 29px;
+  height: 24px;
+    border: none;
+      top: -11px;
+  outline: 0;
+}
+.ui-slider-horizontal .ui-slider-range{
+	  background-color: #000;
+  height: 28%;
+}
+.ui-widget-content{
+ background: yellow;
+}
+
+#amount{
+	border:0; 
+	color:black; 
+	font-weight:bold;
+}
+
+#amount2{
+	border:0; 
+	color:black;
+	font-weight:bold;
+}
+
+/*--------location--------------*/
+
+.location{
+	padding-top: 10px;
+}
+
+.checkboxLeft{
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.checkboxRight{
+	position: absolute;
+	left: 150px;
+	padding-top: 10px;
+}
+
+
+
+
+
+/*-------matchBody--------*/
+
+#matchBody>h1{
+
+	font-size: 17px;
+	padding-top:  37px;
+	padding-left: 5.6%;
+	padding-bottom: 33px;
+}
+
+#matchBody>img{
+	padding-left: 26.1%;
+	padding-bottom: 31px;
+}
+
+#matchBody table {
+
+	border-collapse: collapse;
+	font-size: 15px;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	border:1px solid #000000;
+	height: 245px;
+	width: 80.8%;
+
+}
+
+#matchBody table tr, td{
+
+	border: 1px solid #c6c6c6;
+	padding-left: 10px;
+	width: 88px;
+
+}
+
+ #matchBody th{
+
+	border: 1px solid #c6c6c6;
+	height: 46px;
+
+ }
+
+.match_boy{
+
+	background-color: #83cfdd;
+}
+
+.match_girl{
+	
+	background-color: #feb3bb;
+}
+
+#matchBody h2{
+
+	font-size: 15px;
+	padding-top: 32px;
+	padding-left: 10.9%
+}
+
+#matchBody .barSection>img{
+	margin-left:20%; 
+}
+/*
+
+
+*{
+	padding:0px;
+	margin: 0px;
+}
+
+
+@font-face {
+    font-family: GOTHIC;
+    src: url(GOTHIC.TTF);
+}
+
+@font-face {
+    font-family: GOTHICB;
+    src: url(GOTHICB.TTF);
+}
+
+@font-face {
+    font-family: GOTHICBI;
+    src: url(GOTHICBI.TTF);
+}
+
+@font-face {
+    font-family: GOTHICI;
+    src: url(GOTHICI.TTF);
+}
+
+
+#wrapper{	
+	position:relative;
+	width:100%;
+	margin:0px auto;
+}
+
+header,main,footer,aside,nav{
+	display:block;
+}
+
+/*-------------------------All pages-------------------------------------*/
+
+/*body>section>section>p>a{
+	position: relative;
+	bottom: 18px;
+}*/
+
+h1{
+	font-size: 26px;
+	font-family: GOTHIC;
+}
+
+header,main,footer,aside,nav{
+	display:block;
+}
+
+body{
+	font-family: GOTHIC;
+}
+
+body>a>h1{
+	height: 50px;
+	width: 100%;
+	background-color: #34b670;
+	text-align: center;
+	color: #ffffff;
+	padding-top: 12px;
+}
+
+body>a>h1>img{
+	padding-right: 16px;
+}
+
+a{
+	text-decoration: none;
+}
+
+body>section{
+	position: relative;
+	width: 49%;
+}
+
+body>section>section>p{
+	font-size: 15px;
+}
+
+h2{
+	font-size: 26px;
+}
+
+body .boys h2{
+	background-color: #2babc4;
+	 
+	width: 93%;
+	height: 40px;
+	padding-top: 5px;
+
+}
+
+body .girls h2{
+	background-color: #fe818f;
+	  
+	width: 92%;
+	  height: 40px;
+	  padding-top: 5px;
+
+}
+
+body>section{
+	position: relative;
+}
+
+body>section>h2{
+	color: #ffffff;
+	padding-left: 12px;
+
+}
+
+body>section>h2>a{
+	font-size: 14px;
+	position: absolute;
+	top:15px;
+	right: 10%;
+}
+
+body>section>section>p{
+/*	background-image: url('./images/user_photo_shape.png');
+*/}
+
+body>.girls>section>p{
+	padding-left: 6px;
+	padding-top: 9px;
+}
+
+
+.boys_names{
+	position: relative;
+	bottom:25px;
+	left: 10px;
+}
+
+.girls_names{
+	position: relative;
+	bottom:25px;
+	left: 38%;
+}
+
+
+ /* .girls_img{ 
+ 	padding-left: 5px; 	
+ 	padding-top: 3%;
+ }*/
+
+
+
+.boys{
+	float: left;
+	border-right: #000 1px solid;
+  	min-height: 635px;
+}
+
+
+	
+/*border for each person*/
+.boys > section{
+	 border-right: #000 1px solid;
+}
+.girls{
+	float: left;
+}
+
+
+
+/*---------hexagon----------*/
+
+#categories-boys{
+  overflow:hidden;
+  width:90%;
+  margin:0 auto;
+  top:9px;
+  left: 62%;
+  position: relative;
+}
+
+#categories-boys li{
+  position:relative;
+  list-style-type:none;
+  width:27.85714285714286%; /* = (100-2.5) / 3.5 */
+  padding-bottom: 32.16760145166612%; /* =  width /0.866 */
+  float:left;
+  overflow:hidden;
+  visibility:hidden;
+
+  -webkit-transform: rotate(-60deg) skewY(30deg);
+  -ms-transform: rotate(-60deg) skewY(30deg);
+  transform: rotate(-60deg) skewY(30deg);
+}
+
+
+#categories-boys li *{
+  position:absolute;
+  visibility:visible;
+}
+#categories-boys li > div{
+  width:100%;
+  height:100%;
+  text-align:center;
+  color:#fff;
+  overflow:hidden;
+  
+  -webkit-transform: skewY(-30deg) rotate(60deg);
+  -ms-transform: skewY(-30deg) rotate(60deg);
+  transform: skewY(-30deg) rotate(60deg);
+  
+	-webkit-backface-visibility:hidden;
+  
+}
+
+/* HEX CONTENT */
+#categories-boys li img{
+  left:-100%; right:-100%;
+  width: auto; height:100%;
+  margin:0 auto;   
+}
+
+#categories-girls{
+  overflow:hidden;
+  width:90%;
+  margin:0 auto;
+  top:9px;
+  right: -5px;
+  position: relative;
+}
+
+#categories-girls li{
+  position:relative;
+  list-style-type:none;
+  width:27.85714285714286%; /* = (100-2.5) / 3.5 */
+  padding-bottom: 32.16760145166612%; /* =  width /0.866 */
+  float:left;
+  overflow:hidden;
+  visibility:hidden;
+
+  -webkit-transform: rotate(-60deg) skewY(30deg);
+  -ms-transform: rotate(-60deg) skewY(30deg);
+  transform: rotate(-60deg) skewY(30deg);
+}
+
+
+#categories-girls li *{
+  position:absolute;
+  visibility:visible;
+}
+#categories-girls li > div{
+  width:100%;
+  height:100%;
+  text-align:center;
+  color:#fff;
+  overflow:hidden;
+  
+  -webkit-transform: skewY(-30deg) rotate(60deg);
+  -ms-transform: skewY(-30deg) rotate(60deg);
+  transform: skewY(-30deg) rotate(60deg);
+  
+	-webkit-backface-visibility:hidden;
+}
+
+/* HEX CONTENT */
+#categories-girls li img{
+  left:-100%; right:-100%;
+  width: auto; height:100%;
+  margin:0 auto;   
+}
+
+/*--------filter--------------*/
+
+
+.footer_boys{
+	position:fixed;  
+	height: 48px;
+}
+.footer_girls{
+	position:fixed;
+	right: 0px;  
+	height: 48px;
+}
+
+.footer_boys>h2{
+	background-color:#2babc4;  
+	height: 40px;
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.footer_girls>h2{
+	background-color:#fe818f;  
+	height: 40px;
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+body>footer>section{
+	height:40px;
+	width: 50%;
+	position: relative;
+}
+
+
+
+body>footer>section>h2{
+	color: #ffffff;
+	padding-left: 14px;
+}
+
+
+body>footer>section>h2>a{
+	font-size: 14px;
+	position: absolute;
+	top:15px;
+	right: 10%;
+}
+
+
+body>nav{
+	margin-bottom: 17px;
+}
+
+
+body>nav>ul>li{
+	height: 62px;
+	border-bottom: 2px solid #f8f8f8;
+	/*margin-left:20px;
+	margin-right:20px;
+	margin-top: 10px;*/
+	list-style-type:none;
+	position:relative;
+}
+
+body>nav>ul>li>a{
+	font-size: 18px;
+	color: black;
+	position:absolute;
+	bottom:18px;
+	left:50px;
+}
+
+body>nav>ul>li>a>img{
+	position:absolute;
+	top:0px;
+	left:-34px;
+}
+
+/*--------age--------------*/
+
+.age{
+	padding-top: 10px;
+}
+
+.timeline{
+	padding-bottom: 20px;
+	padding-left: 20px;
+}
+
+.timeline_marker{
+	padding-right: 150px;
+}
+
+.ui-widget-content {
+   background: url("../images/timeline.png");
+  background-repeat: no-repeat;
+  height: 5px;
+  border: none;
+  width: 400px;
+  left: 35px;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+  background: url("../images/timeline_marker.png");
+    width: 29px;
+  height: 24px;
+    border: none;
+      top: -11px;
+  outline: 0;
+}
+.ui-slider-horizontal .ui-slider-range{
+	  background-color: #000;
+  height: 28%;
+}
+.ui-widget-content{
+ background: yellow;
+}
+
+#amount{
+	border:0; 
+	color:black; 
+	font-weight:bold;
+}
+
+#amount2{
+	border:0; 
+	color:black;
+	font-weight:bold;
+}
+
+/*--------location--------------*/
+
+.location{
+	padding-top: 10px;
+}
+
+.checkboxLeft{
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.checkboxRight{
+	position: absolute;
+	left: 150px;
+	padding-top: 10px;
+}
+
+
+
+
+
+/*-------matchBody--------*/
+
+#matchBody>h1{
+
+	font-size: 17px;
+	padding-top:  37px;
+	padding-left: 5.6%;
+	padding-bottom: 33px;
+}
+.final_match{
+	padding-left: 26.1%;
+	padding-bottom: 31px;
+}
+
+#matchBody table {
+
+	border-collapse: collapse;
+	font-size: 15px;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	border:1px solid #000000;
+	height: 245px;
+	width: 80.8%;
+
+}
+
+#matchBody table tr, td{
+
+	border: 1px solid #c6c6c6;
+	padding-left: 10px;
+	width: 88px;
+
+}
+
+ #matchBody th{
+
+	border: 1px solid #c6c6c6;
+	height: 46px;
+
+ }
+
+.match_boy{
+
+	background-color: #83cfdd;
+}
+
+.match_girl{
+	
+	background-color: #feb3bb;
+}
+
+#matchBody h2{
+
+	font-size: 15px;
+	padding-top: 32px;
+	padding-left: 10.9%
+}
+
+#matchBody .barSection>img{
+}
+
+#matchBody p{
+	float:left;
+	color:black;
+	padding:30px;
+}
+
+#matchBody p a{
+	float:left;
+	color:black;
+	padding-left:10px;
+
+}
+
+
+.final_match_{
+	position: relative;
+	margin-left:30.7%; 
+	height:58px;
+	width:156px;
+
+}
+
+.final_match{
+	position:absolute;
+	top:0px;
+	left:-40.7px;
+}
+
+.final_match_boy{
+	position: absolute;
+	top:2.4px;
+	left: 2.4px;
+
+}
+
+.final_match_boy>img{
+	height:56px;
+	width:62px;
+}
+
+.final_match_girl{
+	position: absolute;
+	top:2.4px;
+	right: 1.2px;
+}
+
+.final_match_girl>img{
+	
+	height:56px;
+	width:62px;
+}
+
+/*********************/
+/***education_body****/
+/*********************/
+
+#education_body .education_li{
+
+	height: 217px;
+}
+footer{
+
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:40px;
+   width:100%;
+
+}

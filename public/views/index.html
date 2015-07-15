@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Facebook Login JavaScript Example</title>
+<title>My Matcher</title>
 <meta charset="UTF-8">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body>
+<a id = "logo" href="index.html"> <h1>matcher</h1></a>
   <script> 
     // This is called with the results from from FB.getLoginStatus().
     function statusChangeCallback(response) {
@@ -38,6 +39,7 @@
     function checkLoginState() {
       FB.getLoginStatus(function(response) {
         statusChangeCallback(response);
+        window.location.href="boysgirls.html";
       });
     }
 
@@ -104,7 +106,7 @@
 
     function updateUser(data){
       $.ajax({
-        url:"https://matcher.herokuapp.com/user",
+        url:"http://matcher.herokuapp.com/user",
         method:"post",
         data: data,
         //contentType:"application/json",
@@ -142,15 +144,9 @@
 </div>
 <br><br>
 
-<a href="https://matcher.herokuapp.com/boys">
-<button class="btn btn-default" type="button">Boys</button>
-</a>
 
-<a href="https://matcher.herokuapp.com/girls">
-<button class="btn btn-default" type="button">girls</button>
-</a>
-
-
+<script src="angular.min.js"></script>
+<script src="MyMatcher.js"></script>
 
 
 </body>
