@@ -9,35 +9,35 @@
     <meta name=viewport content="width=device-width, initial-scale=1">
   </head>
 
-  <body ng-controller="MyMatcherController" id="boysgirls">
+  <body ng-controller="boysNgirlsController" id="boysgirlsfilter">
 
     <a href="filter.html"><h1><img class="icon_filter" alt="icon_filter" src="./images/filter.png">Filter your friends!</h1></a>
 
     <section class="boys">
-      <h2>Boys<a>{{testBoys.items.length}} </a></h2>
-      <section ng-repeat="item in testBoys.items" class= "boysFriends">
+      <h2>Boys<a>{{testBoys.items.length}}</a></h2>
+      <section ng-repeat="item in testBoys.items">
         <ul id="categories-boys" class="clr">
           <li>
             <div>
-              <img src="{{item.picture}}" alt="user_picture">
+              <img src="{{item.picture}}" ng-class="{ 'borderB': $index == selectedIndex }" alt="user_picture" ng-click ="boyMatch($index,item)">
             </div>
           </li>
         </ul>
-        <a id="content_boys_name" class ="boys_names">{{item.name}}</a>
+        <a class ="boys_names">{{item.name}}</a>
       </section>
     </section>
 
     <section class="girls">
       <h2>Girls<a>{{testGirls.items.length}}</a></h2>
-      <section ng-repeat="item in testGirls.items" class= "girlsFriends" >
+      <section ng-repeat="item in testGirls.items">
         <ul id="categories-girls" class="clr">
           <li>
-            <div>
-              <img src="{{item.picture}}" alt="user_picture">
+            <div class = "girls_photos">
+              <img src="{{item.picture}}"  ng-class="{ 'borderG': $index == selectedIndex2 }" alt="user_picture" ng-click ="girlMatch($index,item)">
             </div>
           </li>
         </ul>
-        <a id="content_girls_name" class ="girls_names">{{item.name}}</a>
+        <a class ="girls_names">{{item.name}}</a>
       </section>
     </section>
 

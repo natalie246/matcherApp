@@ -1,44 +1,122 @@
 <!DOCTYPE html>
 <html ng-app="MyMatcher">
-<head>
-  <title>boys</title>
-  <link rel ="stylesheet" href="/css/boys_girls.css">
-  <meta name=viewport content="width=device-width, initial-scale=1">
-  
-</head>
-<body ng-controller="MyMatcherController">
+	<head>
+		<title>My Matcher</title>
+		<link rel ="stylesheet" href="css/boysgirls.css">
+		<script src="jquery-1.10.2.js"></script>
+		<script src="jquery-ui.js"></script>
+		<meta name=viewport content="width=device-width, initial-scale=1">
+	</head>
 
-	<a href="filter.html"><h1><img src="./images/filter.png">Filter your friends</h1></a>
-	
-	<nav>
-		<ul>
-			<li><a href="age.html"><img src="./images/age.png">Age</a></li>
-			<li><a href="location.html"><img src="./images/location.png">Location</a></li>
-			<li><a href="education.html"><img src="./images/education.png">Education institution</a></li>
-			<li><a href="#"><img src="./images/origin city.png">City of Origion</a></li>
-			<li><a href="#"><img src="./images/work.png">Work</a></li>
-			<li><a href="#"><img src="./images/events.png">Recent Events</a></li>
-			<li><a href="#"><img src="./images/places.png">Visited Places</a></li>
-			<li><a href="#"><img src="./images/music.png">Music</a></li>
-		</ul>
-	</nav>
+	<body ng-controller="MyMatcherController" id="filter">
+		<a href="filter.html"><h1><img src="./images/filter.png" alt="filter">Filter your friends</h1></a>
+		<nav>
+			<ul>
+				<li id="slider1">
+					<a href="#"><img src="./images/age.png" alt="icon_age">Age</a>
+				</li>
+				<div>
+					<p>
+						<input type="text" id="amount">
+						<label for="amount"></label>
+						<input type="text" id="amount2">
+						<label for="amount2"></label>
+						<div id="slider-range"></div>
+					</p>
+				</div>
+				<li id="slider2">
+					<a href="#"> <img src="./images/location.png" alt="icon_location">Location </a>
+				</li>
+				<div>
+					<section class="left">
+						<p>
+							<a href="#"><img src="./images/checkboxes1.png" alt="checkboxes" value=1 onclick="changeImage(this)"> <a href="#">Tel Aviv</a> </a>
+						</p>
+						<p>
+							<a href="#"><img src="./images/checkboxes1.png" alt="checkboxes" value=2 onclick="changeImage(this)"> <a href="#">Ramat Gan</a> </a>
+						</p>
+						<p>
+							<a href="#"><img src="./images/checkboxes1.png" alt="checkboxes" value=3 onclick="changeImage(this)"> <a href="#">Jerusalem</a> </a>
+						</p>
+						<p>
+							<a href="#"><img src="./images/checkboxes1.png" alt="checkboxes" value=4 onclick="changeImage(this)"> <a href="#">Be'er Sheva</a> </a>
+						</p>
+						<p>
+							<a href="#"><img src="./images/checkboxes1.png" alt="checkboxes" value=5 onclick="changeImage(this)"> <a href="#">Reshon Le Zion</a> </a>
+						</p>
 
-	<footer>
-				<section ng-click="func()" class="footer_boys">
-					<h2>Boys<a>132</a></h2>
-				</section>
-		
-			<section class="footer_girls">
-				<h2>Girls<a>124</a></h2>
+					</section>
+
+					<section class="right">
+						<p>
+							<a href="#"><img src="./images/checkboxes1.png" alt="checkboxes" value=6 onclick="changeImage(this)" ><a href="#">Giv'ataim</a></a>
+						</p>
+						<p>
+							<a href="#"><img src="./images/checkboxes1.png" alt="checkboxes" value=7 onclick="changeImage(this)" ><a href="#">Bet Shemesh</a></a>
+						</p>
+						<p>
+							<a href="#"><img src="./images/checkboxes1.png" alt="checkboxes" value=8 onclick="changeImage(this)" ><a href="#">Netania</a></a>
+						</p>
+						<p>
+							<a href="#"><img src="./images/checkboxes1.png" alt="checkboxes" value=9 onclick="changeImage(this)" ><a href="#">Ashdod</a></a>
+						</p>
+						<p>
+							<a href="#"><img src="./images/checkboxes1.png" alt="checkboxes" value=10 onclick="changeImage(this)" ><a href="#">Holon</a></a>
+						</p>
+					</section>
+				</div>
+				<li id="slider3">
+					<a href="#"><img src="./images/education.png" alt="education_icon">Education institution</a>
+				</li>
+				<div>
+					<section class="education">
+						<p>
+							<a href="#"> <img src="./images/checkboxes1.png" alt="checkboxes" value=11 onclick="changeImage(this)"> <a href="#">Shenkar collage ofengeeniring...</a> </a>
+						</p>
+						<p>
+							<a href="#"><img src="./images/checkboxes1.png" alt="checkboxes" value=12 onclick="changeImage(this)"> <a href="#">Tel-Aviv University</a> </a>
+						</p>
+						<p>
+							<a href="#"><img src="./images/checkboxes1.png" alt="checkboxes" value=13 onclick="changeImage(this)"> <a href="#">The Hebrew University of Jerusalem</a> </a>
+						</p>
+						<p>
+							<a href="#"><img src="./images/checkboxes1.png" alt="checkboxes" value=14 onclick="changeImage(this)"> <a href="#">Ben-Gurion University</a> </a>
+						</p>
+					</section>
+				</div>
+				<li>
+					<a href="#"><img src="./images/origin city.png" alt="city_icon">City of Origion</a>
+				</li>
+				<li>
+					<a href="#"><img src="./images/work.png" alt="work_icon">Work</a>
+				</li>
+				<li>
+					<a href="#"><img src="./images/events.png" alt="events_icon">Recent Events</a>
+				</li>
+				<li>
+					<a href="#"><img src="./images/places.png" alt="places_icon">Visited Places</a>
+				</li>
+				<li>
+					<a href="#"><img src="./images/music.png" alt="music_icon">Music</a>
+				</li>
+			</ul>
+		</nav>
+
+		<footer ng-click ="func()">
+
+			<section class="footer_boys">
+				<h2>Boys<a>{{testBoys.items.length}}</a></h2>
 			</section>
 
-	</footer>
+			<section class="footer_girls">
+				<h2>Girls<a>{{testGirls.items.length}}</a></h2>
+			</section>
 
+		</footer>
 
-<script src="angular.min.js"></script>
-<script src="MyMatcher.js"></script>
-<!-- <a href="match.html">match</a>
- -->
-</body>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+		<!-- <script src="../js/lib/angular/angular.min.js"></script> -->
+		<script src="MyMatcher.js"></script>
+
+	</body>
 </html>
-
